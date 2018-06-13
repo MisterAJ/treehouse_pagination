@@ -31,25 +31,6 @@ const createListeners = $element => {
   });
 };
 
-// const createSearch = () => {
-//   $(".page-header").append(`<input class=search js_search>`);
-//   $(".search").keyup((event) => onSearch(event.target.value))};
-
-// const searchFilter = (studentList, searchInput) => {
-//   return studentList.filter(() => {
-//     if (this.find(searchInput)) {
-//       return true;
-//     }
-//   });
-// };
-
-// const onSearch = (searchTerm) => {
-//     const $searchlist = searchFilter($students, searchTerm)
-//     $(".pagination").remove()
-//     $studentContainer.after(createButtons(buttonCount($searchlist)));
-//     showStudents($students, 1);
-// }
-
 const onPageLoad = () => {
   $studentContainer.after(createButtons(buttonCount($students)));
   showStudents($students, 1);
