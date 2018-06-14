@@ -35,8 +35,6 @@ const onPageLoad = () => {
   $studentContainer.after(createButtons(buttonCount($students)));
   showStudents($students, 1);
   createListeners($(".pagination").children());
-  createSearch();
-
   console.log(
     `${buttonCount($students)} buttons created for ${$students.length} students`
   );
